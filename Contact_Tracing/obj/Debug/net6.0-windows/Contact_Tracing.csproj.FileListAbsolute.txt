@@ -1,0 +1,17 @@
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\bin\Debug\net6.0-windows\Contact_Tracing.exe
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\bin\Debug\net6.0-windows\Contact_Tracing.deps.json
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\bin\Debug\net6.0-windows\Contact_Tracing.runtimeconfig.json
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\bin\Debug\net6.0-windows\Contact_Tracing.dll
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\bin\Debug\net6.0-windows\Contact_Tracing.pdb
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\Contact_Tracing.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\Contact_Tracing.Form1.resources
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\Contact_Tracing.csproj.GenerateResource.cache
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\Contact_Tracing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\Contact_Tracing.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\Contact_Tracing.AssemblyInfo.cs
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\Contact_Tracing.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\Contact_Tracing.dll
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\refint\Contact_Tracing.dll
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\Contact_Tracing.pdb
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\Contact_Tracing.genruntimeconfig.cache
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\ref\Contact_Tracing.dll

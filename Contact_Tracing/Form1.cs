@@ -9,7 +9,10 @@ namespace Contact_Tracing
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-
+            StreamWriter file = new StreamWriter(@"C:\Users\HP\Documents\Outputs\Jowa Application Form.text");
+            file.WriteLine("Pogi Ako");
+            file.Close();
         }
+
     }
 }
