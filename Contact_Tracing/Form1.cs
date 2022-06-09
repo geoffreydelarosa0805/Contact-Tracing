@@ -6,5 +6,10 @@ namespace Contact_Tracing
         {
             InitializeComponent();
         }
+
+        private void buttonSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
