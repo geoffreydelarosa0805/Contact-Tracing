@@ -28,11 +28,12 @@ namespace Contact_Tracing
             file.WriteLine("Workplace Address : " + textBox_WorkplaceAddress.Text);
 
             file.Close();
+            MessageBox.Show("Your information is submitted successfully!");
         }
 
         private void button_Cancel_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+              Application.Exit();
         }
     }
 }

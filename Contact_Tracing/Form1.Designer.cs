@@ -71,17 +71,21 @@
             // 
             // buttonSubmit
             // 
+            this.buttonSubmit.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSubmit.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
+            this.buttonSubmit.ForeColor = System.Drawing.Color.Transparent;
             this.buttonSubmit.Location = new System.Drawing.Point(760, 456);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(75, 23);
             this.buttonSubmit.TabIndex = 0;
             this.buttonSubmit.Text = "Submit";
-            this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.UseVisualStyleBackColor = false;
             this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // label_FirstName
             // 
             this.label_FirstName.AutoSize = true;
+            this.label_FirstName.BackColor = System.Drawing.Color.Transparent;
             this.label_FirstName.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_FirstName.Location = new System.Drawing.Point(42, 35);
             this.label_FirstName.Name = "label_FirstName";
@@ -91,14 +95,16 @@
             // 
             // textBox_FirstName
             // 
+            this.textBox_FirstName.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_FirstName.Location = new System.Drawing.Point(143, 31);
             this.textBox_FirstName.Name = "textBox_FirstName";
-            this.textBox_FirstName.Size = new System.Drawing.Size(192, 29);
+            this.textBox_FirstName.Size = new System.Drawing.Size(192, 24);
             this.textBox_FirstName.TabIndex = 2;
             // 
             // label_Surname
             // 
             this.label_Surname.AutoSize = true;
+            this.label_Surname.BackColor = System.Drawing.Color.Transparent;
             this.label_Surname.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Surname.Location = new System.Drawing.Point(42, 74);
             this.label_Surname.Name = "label_Surname";
@@ -109,6 +115,7 @@
             // label_Age
             // 
             this.label_Age.AutoSize = true;
+            this.label_Age.BackColor = System.Drawing.Color.Transparent;
             this.label_Age.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Age.Location = new System.Drawing.Point(42, 179);
             this.label_Age.Name = "label_Age";
@@ -119,6 +126,7 @@
             // label_Birthdate
             // 
             this.label_Birthdate.AutoSize = true;
+            this.label_Birthdate.BackColor = System.Drawing.Color.Transparent;
             this.label_Birthdate.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Birthdate.Location = new System.Drawing.Point(42, 143);
             this.label_Birthdate.Name = "label_Birthdate";
@@ -129,6 +137,7 @@
             // label_Address
             // 
             this.label_Address.AutoSize = true;
+            this.label_Address.BackColor = System.Drawing.Color.Transparent;
             this.label_Address.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Address.Location = new System.Drawing.Point(42, 214);
             this.label_Address.Name = "label_Address";
@@ -139,6 +148,7 @@
             // label_Telephone
             // 
             this.label_Telephone.AutoSize = true;
+            this.label_Telephone.BackColor = System.Drawing.Color.Transparent;
             this.label_Telephone.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Telephone.Location = new System.Drawing.Point(42, 319);
             this.label_Telephone.Name = "label_Telephone";
@@ -149,6 +159,7 @@
             // label_Email
             // 
             this.label_Email.AutoSize = true;
+            this.label_Email.BackColor = System.Drawing.Color.Transparent;
             this.label_Email.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Email.Location = new System.Drawing.Point(42, 248);
             this.label_Email.Name = "label_Email";
@@ -159,6 +170,7 @@
             // label_PhoneNo
             // 
             this.label_PhoneNo.AutoSize = true;
+            this.label_PhoneNo.BackColor = System.Drawing.Color.Transparent;
             this.label_PhoneNo.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_PhoneNo.Location = new System.Drawing.Point(42, 283);
             this.label_PhoneNo.Name = "label_PhoneNo";
@@ -168,55 +180,63 @@
             // 
             // textBox_Surname
             // 
+            this.textBox_Surname.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_Surname.Location = new System.Drawing.Point(143, 66);
             this.textBox_Surname.Name = "textBox_Surname";
-            this.textBox_Surname.Size = new System.Drawing.Size(192, 29);
+            this.textBox_Surname.Size = new System.Drawing.Size(192, 24);
             this.textBox_Surname.TabIndex = 10;
             // 
             // textBox_Age
             // 
+            this.textBox_Age.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_Age.Location = new System.Drawing.Point(143, 171);
             this.textBox_Age.Name = "textBox_Age";
-            this.textBox_Age.Size = new System.Drawing.Size(192, 29);
+            this.textBox_Age.Size = new System.Drawing.Size(192, 24);
             this.textBox_Age.TabIndex = 11;
             // 
             // textBox_Birthdate
             // 
+            this.textBox_Birthdate.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_Birthdate.Location = new System.Drawing.Point(143, 136);
             this.textBox_Birthdate.Name = "textBox_Birthdate";
-            this.textBox_Birthdate.Size = new System.Drawing.Size(192, 29);
+            this.textBox_Birthdate.Size = new System.Drawing.Size(192, 24);
             this.textBox_Birthdate.TabIndex = 12;
             // 
             // textBox_Address
             // 
+            this.textBox_Address.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_Address.Location = new System.Drawing.Point(143, 206);
             this.textBox_Address.Name = "textBox_Address";
-            this.textBox_Address.Size = new System.Drawing.Size(192, 29);
+            this.textBox_Address.Size = new System.Drawing.Size(192, 24);
             this.textBox_Address.TabIndex = 13;
             // 
             // textBox_Telephone
             // 
+            this.textBox_Telephone.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_Telephone.Location = new System.Drawing.Point(143, 311);
             this.textBox_Telephone.Name = "textBox_Telephone";
-            this.textBox_Telephone.Size = new System.Drawing.Size(192, 29);
+            this.textBox_Telephone.Size = new System.Drawing.Size(192, 24);
             this.textBox_Telephone.TabIndex = 14;
             // 
             // textBox_Email
             // 
+            this.textBox_Email.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_Email.Location = new System.Drawing.Point(143, 241);
             this.textBox_Email.Name = "textBox_Email";
-            this.textBox_Email.Size = new System.Drawing.Size(192, 29);
+            this.textBox_Email.Size = new System.Drawing.Size(192, 24);
             this.textBox_Email.TabIndex = 15;
             // 
             // textBox_PhoneNo
             // 
+            this.textBox_PhoneNo.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_PhoneNo.Location = new System.Drawing.Point(143, 276);
             this.textBox_PhoneNo.Name = "textBox_PhoneNo";
-            this.textBox_PhoneNo.Size = new System.Drawing.Size(192, 29);
+            this.textBox_PhoneNo.Size = new System.Drawing.Size(192, 24);
             this.textBox_PhoneNo.TabIndex = 16;
             // 
             // groupBox_PersonalInformation
             // 
+            this.groupBox_PersonalInformation.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.groupBox_PersonalInformation.Controls.Add(this.textBox_Gender);
             this.groupBox_PersonalInformation.Controls.Add(this.textBox_Email);
             this.groupBox_PersonalInformation.Controls.Add(this.label_Email);
@@ -236,6 +256,7 @@
             this.groupBox_PersonalInformation.Controls.Add(this.label_Surname);
             this.groupBox_PersonalInformation.Controls.Add(this.textBox_Address);
             this.groupBox_PersonalInformation.Font = new System.Drawing.Font("Curlz MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox_PersonalInformation.ForeColor = System.Drawing.Color.White;
             this.groupBox_PersonalInformation.Location = new System.Drawing.Point(25, 67);
             this.groupBox_PersonalInformation.Name = "groupBox_PersonalInformation";
             this.groupBox_PersonalInformation.Size = new System.Drawing.Size(357, 366);
@@ -245,14 +266,16 @@
             // 
             // textBox_Gender
             // 
+            this.textBox_Gender.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_Gender.Location = new System.Drawing.Point(143, 101);
             this.textBox_Gender.Name = "textBox_Gender";
-            this.textBox_Gender.Size = new System.Drawing.Size(192, 29);
+            this.textBox_Gender.Size = new System.Drawing.Size(192, 24);
             this.textBox_Gender.TabIndex = 18;
             // 
             // label_Gender
             // 
             this.label_Gender.AutoSize = true;
+            this.label_Gender.BackColor = System.Drawing.Color.Transparent;
             this.label_Gender.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Gender.Location = new System.Drawing.Point(42, 109);
             this.label_Gender.Name = "label_Gender";
@@ -263,15 +286,19 @@
             // labelContactTracingForm
             // 
             this.labelContactTracingForm.AutoSize = true;
-            this.labelContactTracingForm.Font = new System.Drawing.Font("Ink Free", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelContactTracingForm.Location = new System.Drawing.Point(223, 19);
+            this.labelContactTracingForm.BackColor = System.Drawing.Color.Transparent;
+            this.labelContactTracingForm.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelContactTracingForm.ForeColor = System.Drawing.Color.White;
+            this.labelContactTracingForm.Location = new System.Drawing.Point(284, 16);
             this.labelContactTracingForm.Name = "labelContactTracingForm";
-            this.labelContactTracingForm.Size = new System.Drawing.Size(286, 34);
+            this.labelContactTracingForm.Size = new System.Drawing.Size(276, 31);
             this.labelContactTracingForm.TabIndex = 18;
             this.labelContactTracingForm.Text = "Contact Tracing Form";
+            this.labelContactTracingForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // groupBoxOtherPersontoContact
             // 
+            this.groupBoxOtherPersontoContact.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.groupBoxOtherPersontoContact.Controls.Add(this.textBox_EmailAddress);
             this.groupBoxOtherPersontoContact.Controls.Add(this.textBox_WorkplaceAddress);
             this.groupBoxOtherPersontoContact.Controls.Add(this.label_WorkplaceAddress);
@@ -287,6 +314,7 @@
             this.groupBoxOtherPersontoContact.Controls.Add(this.label_Relationship);
             this.groupBoxOtherPersontoContact.Controls.Add(this.textBox_Occupation);
             this.groupBoxOtherPersontoContact.Font = new System.Drawing.Font("Curlz MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBoxOtherPersontoContact.ForeColor = System.Drawing.Color.White;
             this.groupBoxOtherPersontoContact.Location = new System.Drawing.Point(402, 67);
             this.groupBoxOtherPersontoContact.Name = "groupBoxOtherPersontoContact";
             this.groupBoxOtherPersontoContact.Size = new System.Drawing.Size(417, 366);
@@ -296,21 +324,24 @@
             // 
             // textBox_EmailAddress
             // 
+            this.textBox_EmailAddress.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_EmailAddress.Location = new System.Drawing.Point(204, 100);
             this.textBox_EmailAddress.Name = "textBox_EmailAddress";
-            this.textBox_EmailAddress.Size = new System.Drawing.Size(192, 29);
+            this.textBox_EmailAddress.Size = new System.Drawing.Size(192, 24);
             this.textBox_EmailAddress.TabIndex = 36;
             // 
             // textBox_WorkplaceAddress
             // 
+            this.textBox_WorkplaceAddress.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_WorkplaceAddress.Location = new System.Drawing.Point(204, 240);
             this.textBox_WorkplaceAddress.Name = "textBox_WorkplaceAddress";
-            this.textBox_WorkplaceAddress.Size = new System.Drawing.Size(192, 29);
+            this.textBox_WorkplaceAddress.Size = new System.Drawing.Size(192, 24);
             this.textBox_WorkplaceAddress.TabIndex = 33;
             // 
             // label_WorkplaceAddress
             // 
             this.label_WorkplaceAddress.AutoSize = true;
+            this.label_WorkplaceAddress.BackColor = System.Drawing.Color.Transparent;
             this.label_WorkplaceAddress.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_WorkplaceAddress.Location = new System.Drawing.Point(50, 247);
             this.label_WorkplaceAddress.Name = "label_WorkplaceAddress";
@@ -321,6 +352,7 @@
             // label_EmailAddress
             // 
             this.label_EmailAddress.AutoSize = true;
+            this.label_EmailAddress.BackColor = System.Drawing.Color.Transparent;
             this.label_EmailAddress.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_EmailAddress.Location = new System.Drawing.Point(50, 108);
             this.label_EmailAddress.Name = "label_EmailAddress";
@@ -331,6 +363,7 @@
             // label_Occupation
             // 
             this.label_Occupation.AutoSize = true;
+            this.label_Occupation.BackColor = System.Drawing.Color.Transparent;
             this.label_Occupation.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Occupation.Location = new System.Drawing.Point(50, 213);
             this.label_Occupation.Name = "label_Occupation";
@@ -340,21 +373,24 @@
             // 
             // textBox_ContactNo
             // 
+            this.textBox_ContactNo.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_ContactNo.Location = new System.Drawing.Point(204, 135);
             this.textBox_ContactNo.Name = "textBox_ContactNo";
-            this.textBox_ContactNo.Size = new System.Drawing.Size(192, 29);
+            this.textBox_ContactNo.Size = new System.Drawing.Size(192, 24);
             this.textBox_ContactNo.TabIndex = 30;
             // 
             // textBox_Relationship
             // 
+            this.textBox_Relationship.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_Relationship.Location = new System.Drawing.Point(204, 65);
             this.textBox_Relationship.Name = "textBox_Relationship";
-            this.textBox_Relationship.Size = new System.Drawing.Size(192, 29);
+            this.textBox_Relationship.Size = new System.Drawing.Size(192, 24);
             this.textBox_Relationship.TabIndex = 28;
             // 
             // label_ContactNo
             // 
             this.label_ContactNo.AutoSize = true;
+            this.label_ContactNo.BackColor = System.Drawing.Color.Transparent;
             this.label_ContactNo.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_ContactNo.Location = new System.Drawing.Point(50, 142);
             this.label_ContactNo.Name = "label_ContactNo";
@@ -365,6 +401,7 @@
             // label_PersonName
             // 
             this.label_PersonName.AutoSize = true;
+            this.label_PersonName.BackColor = System.Drawing.Color.Transparent;
             this.label_PersonName.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_PersonName.Location = new System.Drawing.Point(50, 34);
             this.label_PersonName.Name = "label_PersonName";
@@ -374,14 +411,16 @@
             // 
             // textBox_PersonAddress
             // 
+            this.textBox_PersonAddress.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_PersonAddress.Location = new System.Drawing.Point(204, 170);
             this.textBox_PersonAddress.Name = "textBox_PersonAddress";
-            this.textBox_PersonAddress.Size = new System.Drawing.Size(192, 29);
+            this.textBox_PersonAddress.Size = new System.Drawing.Size(192, 24);
             this.textBox_PersonAddress.TabIndex = 29;
             // 
             // label_PersonAddress
             // 
             this.label_PersonAddress.AutoSize = true;
+            this.label_PersonAddress.BackColor = System.Drawing.Color.Transparent;
             this.label_PersonAddress.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_PersonAddress.Location = new System.Drawing.Point(50, 178);
             this.label_PersonAddress.Name = "label_PersonAddress";
@@ -391,14 +430,16 @@
             // 
             // textBox_PersonName
             // 
+            this.textBox_PersonName.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_PersonName.Location = new System.Drawing.Point(204, 30);
             this.textBox_PersonName.Name = "textBox_PersonName";
-            this.textBox_PersonName.Size = new System.Drawing.Size(192, 29);
+            this.textBox_PersonName.Size = new System.Drawing.Size(192, 24);
             this.textBox_PersonName.TabIndex = 20;
             // 
             // label_Relationship
             // 
             this.label_Relationship.AutoSize = true;
+            this.label_Relationship.BackColor = System.Drawing.Color.Transparent;
             this.label_Relationship.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_Relationship.Location = new System.Drawing.Point(50, 73);
             this.label_Relationship.Name = "label_Relationship";
@@ -408,31 +449,37 @@
             // 
             // textBox_Occupation
             // 
+            this.textBox_Occupation.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_Occupation.Location = new System.Drawing.Point(204, 205);
             this.textBox_Occupation.Name = "textBox_Occupation";
-            this.textBox_Occupation.Size = new System.Drawing.Size(192, 29);
+            this.textBox_Occupation.Size = new System.Drawing.Size(192, 24);
             this.textBox_Occupation.TabIndex = 31;
             // 
             // button_Cancel
             // 
+            this.button_Cancel.BackColor = System.Drawing.Color.White;
+            this.button_Cancel.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
+            this.button_Cancel.ForeColor = System.Drawing.Color.Transparent;
             this.button_Cancel.Location = new System.Drawing.Point(669, 456);
             this.button_Cancel.Name = "button_Cancel";
             this.button_Cancel.Size = new System.Drawing.Size(75, 23);
             this.button_Cancel.TabIndex = 20;
             this.button_Cancel.Text = "Cancel";
-            this.button_Cancel.UseVisualStyleBackColor = true;
+            this.button_Cancel.UseVisualStyleBackColor = false;
             this.button_Cancel.Click += new System.EventHandler(this.button_Cancel_Click);
             // 
             // Form_ContactTracingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.ClientSize = new System.Drawing.Size(847, 487);
             this.Controls.Add(this.button_Cancel);
             this.Controls.Add(this.groupBoxOtherPersontoContact);
             this.Controls.Add(this.labelContactTracingForm);
             this.Controls.Add(this.groupBox_PersonalInformation);
             this.Controls.Add(this.buttonSubmit);
+            this.MaximizeBox = false;
             this.Name = "Form_ContactTracingForm";
             this.groupBox_PersonalInformation.ResumeLayout(false);
             this.groupBox_PersonalInformation.PerformLayout();
