@@ -30,5 +30,9 @@ namespace Contact_Tracing
             file.Close();
         }
 
+        private void button_Cancel_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

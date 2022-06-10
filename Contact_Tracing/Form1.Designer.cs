@@ -64,13 +64,14 @@
             this.textBox_PersonName = new System.Windows.Forms.TextBox();
             this.label_Relationship = new System.Windows.Forms.Label();
             this.textBox_Occupation = new System.Windows.Forms.TextBox();
+            this.button_Cancel = new System.Windows.Forms.Button();
             this.groupBox_PersonalInformation.SuspendLayout();
             this.groupBoxOtherPersontoContact.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonSubmit
             // 
-            this.buttonSubmit.Location = new System.Drawing.Point(711, 456);
+            this.buttonSubmit.Location = new System.Drawing.Point(760, 456);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(75, 23);
             this.buttonSubmit.TabIndex = 0;
@@ -412,11 +413,22 @@
             this.textBox_Occupation.Size = new System.Drawing.Size(192, 29);
             this.textBox_Occupation.TabIndex = 31;
             // 
+            // button_Cancel
+            // 
+            this.button_Cancel.Location = new System.Drawing.Point(669, 456);
+            this.button_Cancel.Name = "button_Cancel";
+            this.button_Cancel.Size = new System.Drawing.Size(75, 23);
+            this.button_Cancel.TabIndex = 20;
+            this.button_Cancel.Text = "Cancel";
+            this.button_Cancel.UseVisualStyleBackColor = true;
+            this.button_Cancel.Click += new System.EventHandler(this.button_Cancel_Click);
+            // 
             // Form_ContactTracingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(847, 504);
+            this.ClientSize = new System.Drawing.Size(847, 487);
+            this.Controls.Add(this.button_Cancel);
             this.Controls.Add(this.groupBoxOtherPersontoContact);
             this.Controls.Add(this.labelContactTracingForm);
             this.Controls.Add(this.groupBox_PersonalInformation);
@@ -469,5 +481,6 @@
         private TextBox textBox_PersonName;
         private Label label_Relationship;
         private TextBox textBox_Occupation;
+        private Button button_Cancel;
     }
 }
