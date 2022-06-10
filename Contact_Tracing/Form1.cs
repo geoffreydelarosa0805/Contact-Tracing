@@ -1,8 +1,8 @@
 namespace Contact_Tracing
 {
-    public partial class Form_JowaApplicationForm : Form
+    public partial class Form_ContactTracingForm : Form
     {
-        public Form_JowaApplicationForm()
+        public Form_ContactTracingForm()
         {
             InitializeComponent();
         }
@@ -16,10 +16,16 @@ namespace Contact_Tracing
             file.WriteLine("Birthdate : " + textBox_Birthdate.Text);
             file.WriteLine("Age : " + textBox_Age.Text);
             file.WriteLine("Address : " + textBox_Address.Text);
-            file.WriteLine("Height : " + textBox_Height.Text);
-            file.WriteLine("Weight : " + textBox_Weight.Text);
-            file.WriteLine("Status : " + textBox_Status.Text);
-           
+            file.WriteLine("Email : " + textBox_Email.Text);
+            file.WriteLine("Phone No. : " + textBox_PhoneNo.Text);
+            file.WriteLine("Telephone : " + textBox_Telephone.Text);
+            file.WriteLine("Person's Name : " + textBox_PersonName.Text);
+            file.WriteLine("Relationship : " + textBox_Relationship.Text);
+            file.WriteLine("Email Address : " + textBox_EmailAddress.Text);
+            file.WriteLine("Contact No. : " + textBox_ContactNo.Text);
+            file.WriteLine("Person's Address : " + textBox_PersonAddress.Text);
+            file.WriteLine("Occupation : " + textBox_Occupation.Text);
+            file.WriteLine("Workplace Address : " + textBox_WorkplaceAddress.Text);
 
             file.Close();
         }
