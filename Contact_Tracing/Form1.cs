@@ -9,7 +9,8 @@ namespace Contact_Tracing
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\HP\Documents\Outputs\Contact Tracing Form.text");
+            StreamWriter file = new StreamWriter(@"C:\Users\HP\Documents\Outputs\Contact Tracing File\" + textBox_Surname.Text + "-" + textBox_FirstName.Text + ".txt");
+
             file.WriteLine("First Name : " + textBox_FirstName.Text);
             file.WriteLine("Surname : " + textBox_Surname.Text);
             file.WriteLine("Gender : " + textBox_Gender.Text);
@@ -29,7 +30,7 @@ namespace Contact_Tracing
             file.WriteLine("Occupation : " + textBox_Occupation.Text);
             file.WriteLine("Workplace Address : " + textBox_WorkplaceAddress.Text);
 
-            
+
             file.Close();
 
             MessageBox.Show("Your information is submitted successfully!");
@@ -41,16 +42,7 @@ namespace Contact_Tracing
             Application.Exit();
         }
 
-        public static void ReadFromFile(object sender, EventArgs e)
-        {
-            StreamReader file = new StreamReader(@"C:\Users\HP\Documents\Outputs\Contact Tracing Form.text");
-
-            while(!file.EndOfStream)
-            {
-                Console.WriteLine(file.ReadLine());
-            }
-
-            file.Close();
-        }
+        
     }
+
 }
