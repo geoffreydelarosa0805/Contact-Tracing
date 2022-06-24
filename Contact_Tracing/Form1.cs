@@ -34,7 +34,11 @@ namespace Contact_Tracing
             file.Close();
 
             MessageBox.Show("Your information is submitted successfully!");
-            Application.Exit();
+
+            StreamReader read = new StreamReader(@"C:\Users\HP\Documents\Outputs\Contact Tracing File\" + textBox_Surname.Text + "-" + textBox_FirstName.Text + ".txt");
+
+            richTextBox_Reader.Text = read.ReadToEnd();
+            read.Close();
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
@@ -42,7 +46,7 @@ namespace Contact_Tracing
             Application.Exit();
         }
 
-        
+      
     }
 
 }

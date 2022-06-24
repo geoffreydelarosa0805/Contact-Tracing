@@ -65,6 +65,8 @@
             this.label_Relationship = new System.Windows.Forms.Label();
             this.textBox_Occupation = new System.Windows.Forms.TextBox();
             this.buttonCancel = new System.Windows.Forms.Button();
+            this.richTextBox_Reader = new System.Windows.Forms.RichTextBox();
+            this.label_ContactsofUsers = new System.Windows.Forms.Label();
             this.groupBox_PersonalInformation.SuspendLayout();
             this.groupBoxOtherPersontoContact.SuspendLayout();
             this.SuspendLayout();
@@ -468,12 +470,34 @@
             this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
+            // richTextBox_Reader
+            // 
+            this.richTextBox_Reader.Location = new System.Drawing.Point(25, 510);
+            this.richTextBox_Reader.Name = "richTextBox_Reader";
+            this.richTextBox_Reader.Size = new System.Drawing.Size(578, 127);
+            this.richTextBox_Reader.TabIndex = 21;
+            this.richTextBox_Reader.Text = "";
+            // 
+            // label_ContactsofUsers
+            // 
+            this.label_ContactsofUsers.AutoSize = true;
+            this.label_ContactsofUsers.BackColor = System.Drawing.Color.Transparent;
+            this.label_ContactsofUsers.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_ContactsofUsers.ForeColor = System.Drawing.Color.White;
+            this.label_ContactsofUsers.Location = new System.Drawing.Point(25, 484);
+            this.label_ContactsofUsers.Name = "label_ContactsofUsers";
+            this.label_ContactsofUsers.Size = new System.Drawing.Size(157, 14);
+            this.label_ContactsofUsers.TabIndex = 19;
+            this.label_ContactsofUsers.Text = "Contacts of Users :";
+            // 
             // Form_ContactTracingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
-            this.ClientSize = new System.Drawing.Size(847, 487);
+            this.ClientSize = new System.Drawing.Size(860, 676);
+            this.Controls.Add(this.label_ContactsofUsers);
+            this.Controls.Add(this.richTextBox_Reader);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.groupBoxOtherPersontoContact);
             this.Controls.Add(this.labelContactTracingForm);
@@ -529,5 +553,7 @@
         private Label label_Relationship;
         private TextBox textBox_Occupation;
         private Button buttonCancel;
+        private RichTextBox richTextBox_Reader;
+        private Label label_ContactsofUsers;
     }
 }
