@@ -29,13 +29,28 @@ namespace Contact_Tracing
             file.WriteLine("Occupation : " + textBox_Occupation.Text);
             file.WriteLine("Workplace Address : " + textBox_WorkplaceAddress.Text);
 
+            
             file.Close();
+
             MessageBox.Show("Your information is submitted successfully!");
+            Application.Exit();
         }
 
-        private void button_Cancel_Click(object sender, EventArgs e)
+        private void buttonCancel_Click(object sender, EventArgs e)
         {
-              Application.Exit();
+            Application.Exit();
+        }
+
+        public static void ReadFromFile(object sender, EventArgs e)
+        {
+            StreamReader file = new StreamReader(@"C:\Users\HP\Documents\Outputs\Contact Tracing Form.text");
+
+            while(!file.EndOfStream)
+            {
+                Console.WriteLine(file.ReadLine());
+            }
+
+            file.Close();
         }
     }
 }

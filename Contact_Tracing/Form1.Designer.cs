@@ -64,7 +64,7 @@
             this.textBox_PersonName = new System.Windows.Forms.TextBox();
             this.label_Relationship = new System.Windows.Forms.Label();
             this.textBox_Occupation = new System.Windows.Forms.TextBox();
-            this.button_Cancel = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.groupBox_PersonalInformation.SuspendLayout();
             this.groupBoxOtherPersontoContact.SuspendLayout();
             this.SuspendLayout();
@@ -455,18 +455,18 @@
             this.textBox_Occupation.Size = new System.Drawing.Size(192, 24);
             this.textBox_Occupation.TabIndex = 31;
             // 
-            // button_Cancel
+            // buttonCancel
             // 
-            this.button_Cancel.BackColor = System.Drawing.Color.White;
-            this.button_Cancel.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
-            this.button_Cancel.ForeColor = System.Drawing.Color.Transparent;
-            this.button_Cancel.Location = new System.Drawing.Point(669, 456);
-            this.button_Cancel.Name = "button_Cancel";
-            this.button_Cancel.Size = new System.Drawing.Size(75, 23);
-            this.button_Cancel.TabIndex = 20;
-            this.button_Cancel.Text = "Cancel";
-            this.button_Cancel.UseVisualStyleBackColor = false;
-            this.button_Cancel.Click += new System.EventHandler(this.button_Cancel_Click);
+            this.buttonCancel.BackColor = System.Drawing.Color.Transparent;
+            this.buttonCancel.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
+            this.buttonCancel.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonCancel.Location = new System.Drawing.Point(667, 456);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.TabIndex = 20;
+            this.buttonCancel.Text = "Cancel";
+            this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // Form_ContactTracingForm
             // 
@@ -474,7 +474,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.ClientSize = new System.Drawing.Size(847, 487);
-            this.Controls.Add(this.button_Cancel);
+            this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.groupBoxOtherPersontoContact);
             this.Controls.Add(this.labelContactTracingForm);
             this.Controls.Add(this.groupBox_PersonalInformation);
@@ -528,6 +528,6 @@
         private TextBox textBox_PersonName;
         private Label label_Relationship;
         private TextBox textBox_Occupation;
-        private Button button_Cancel;
+        private Button buttonCancel;
     }
 }

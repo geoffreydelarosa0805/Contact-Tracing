@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact_Tracing", "Contact_Tracing\Contact_Tracing.csproj", "{5F9CE4DB-94EC-4458-9998-A5202267829A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact_Tracing", "Contact_Tracing\Contact_Tracing.csproj", "{5F9CE4DB-94EC-4458-9998-A5202267829A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
