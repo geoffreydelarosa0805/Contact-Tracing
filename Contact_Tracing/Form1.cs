@@ -37,7 +37,10 @@ namespace Contact_Tracing
 
             StreamReader read = new StreamReader(@"C:\Users\HP\Documents\Outputs\Contact Tracing File\" + textBox_Surname.Text + "-" + textBox_FirstName.Text + ".txt");
 
-            richTextBox_Reader.Text = read.ReadToEnd();
+            listView_ContactsOfUsers.Text = read.ReadToEnd();
+
+            listView_ContactsOfUsers.Items.Add(textBox_Surname.Text + ", " + textBox_FirstName.Text);
+
             read.Close();
         }
 

@@ -65,8 +65,10 @@
             this.label_Relationship = new System.Windows.Forms.Label();
             this.textBox_Occupation = new System.Windows.Forms.TextBox();
             this.buttonCancel = new System.Windows.Forms.Button();
-            this.richTextBox_Reader = new System.Windows.Forms.RichTextBox();
             this.label_ContactsofUsers = new System.Windows.Forms.Label();
+            this.columnHeader_Names = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader_Date = new System.Windows.Forms.ColumnHeader();
+            this.listView_ContactsOfUsers = new System.Windows.Forms.ListView();
             this.groupBox_PersonalInformation.SuspendLayout();
             this.groupBoxOtherPersontoContact.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +78,7 @@
             this.buttonSubmit.BackColor = System.Drawing.Color.Transparent;
             this.buttonSubmit.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.buttonSubmit.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonSubmit.Location = new System.Drawing.Point(760, 456);
+            this.buttonSubmit.Location = new System.Drawing.Point(771, 641);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(75, 23);
             this.buttonSubmit.TabIndex = 0;
@@ -259,7 +261,7 @@
             this.groupBox_PersonalInformation.Controls.Add(this.textBox_Address);
             this.groupBox_PersonalInformation.Font = new System.Drawing.Font("Curlz MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox_PersonalInformation.ForeColor = System.Drawing.Color.White;
-            this.groupBox_PersonalInformation.Location = new System.Drawing.Point(25, 67);
+            this.groupBox_PersonalInformation.Location = new System.Drawing.Point(25, 101);
             this.groupBox_PersonalInformation.Name = "groupBox_PersonalInformation";
             this.groupBox_PersonalInformation.Size = new System.Drawing.Size(357, 366);
             this.groupBox_PersonalInformation.TabIndex = 17;
@@ -317,7 +319,7 @@
             this.groupBoxOtherPersontoContact.Controls.Add(this.textBox_Occupation);
             this.groupBoxOtherPersontoContact.Font = new System.Drawing.Font("Curlz MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBoxOtherPersontoContact.ForeColor = System.Drawing.Color.White;
-            this.groupBoxOtherPersontoContact.Location = new System.Drawing.Point(402, 67);
+            this.groupBoxOtherPersontoContact.Location = new System.Drawing.Point(402, 101);
             this.groupBoxOtherPersontoContact.Name = "groupBoxOtherPersontoContact";
             this.groupBoxOtherPersontoContact.Size = new System.Drawing.Size(417, 366);
             this.groupBoxOtherPersontoContact.TabIndex = 19;
@@ -462,21 +464,13 @@
             this.buttonCancel.BackColor = System.Drawing.Color.Transparent;
             this.buttonCancel.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.buttonCancel.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonCancel.Location = new System.Drawing.Point(667, 456);
+            this.buttonCancel.Location = new System.Drawing.Point(678, 641);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 20;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
-            // 
-            // richTextBox_Reader
-            // 
-            this.richTextBox_Reader.Location = new System.Drawing.Point(25, 510);
-            this.richTextBox_Reader.Name = "richTextBox_Reader";
-            this.richTextBox_Reader.Size = new System.Drawing.Size(578, 127);
-            this.richTextBox_Reader.TabIndex = 21;
-            this.richTextBox_Reader.Text = "";
             // 
             // label_ContactsofUsers
             // 
@@ -490,14 +484,37 @@
             this.label_ContactsofUsers.TabIndex = 19;
             this.label_ContactsofUsers.Text = "Contacts of Users :";
             // 
+            // columnHeader_Names
+            // 
+            this.columnHeader_Names.Text = "Name";
+            this.columnHeader_Names.Width = 300;
+            // 
+            // columnHeader_Date
+            // 
+            this.columnHeader_Date.Text = "Date";
+            this.columnHeader_Date.Width = 150;
+            // 
+            // listView_ContactsOfUsers
+            // 
+            this.listView_ContactsOfUsers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader_Names,
+            this.columnHeader_Date});
+            this.listView_ContactsOfUsers.GridLines = true;
+            this.listView_ContactsOfUsers.Location = new System.Drawing.Point(29, 510);
+            this.listView_ContactsOfUsers.Name = "listView_ContactsOfUsers";
+            this.listView_ContactsOfUsers.Size = new System.Drawing.Size(458, 154);
+            this.listView_ContactsOfUsers.TabIndex = 21;
+            this.listView_ContactsOfUsers.UseCompatibleStateImageBehavior = false;
+            this.listView_ContactsOfUsers.View = System.Windows.Forms.View.Details;
+            // 
             // Form_ContactTracingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.ClientSize = new System.Drawing.Size(860, 676);
+            this.Controls.Add(this.listView_ContactsOfUsers);
             this.Controls.Add(this.label_ContactsofUsers);
-            this.Controls.Add(this.richTextBox_Reader);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.groupBoxOtherPersontoContact);
             this.Controls.Add(this.labelContactTracingForm);
@@ -553,7 +570,9 @@
         private Label label_Relationship;
         private TextBox textBox_Occupation;
         private Button buttonCancel;
-        private RichTextBox richTextBox_Reader;
         private Label label_ContactsofUsers;
+        private ColumnHeader columnHeader_Names;
+        private ColumnHeader columnHeader_Date;
+        private ListView listView_ContactsOfUsers;
     }
 }
