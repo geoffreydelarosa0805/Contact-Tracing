@@ -11,6 +11,7 @@ namespace Contact_Tracing
         {
             StreamWriter file = new StreamWriter(@"C:\Users\HP\Documents\Outputs\Contact Tracing File\" + textBox_Surname.Text + "-" + textBox_FirstName.Text + ".txt");
 
+            file.WriteLine("Date of Filling : " + dateTimePicker_DateofFilling.Text);
             file.WriteLine("First Name : " + textBox_FirstName.Text);
             file.WriteLine("Surname : " + textBox_Surname.Text);
             file.WriteLine("Gender : " + textBox_Gender.Text);
@@ -37,9 +38,14 @@ namespace Contact_Tracing
 
             StreamReader read = new StreamReader(@"C:\Users\HP\Documents\Outputs\Contact Tracing File\" + textBox_Surname.Text + "-" + textBox_FirstName.Text + ".txt");
 
+            ListViewItem item;
+            item = listView_ContactsOfUsers.Items.Add(textBox_Surname.Text + ", " + textBox_FirstName.Text);
+            item.SubItems.Add(dateTimePicker_DateofFilling.Text);
+
+            
+
             listView_ContactsOfUsers.Text = read.ReadToEnd();
 
-            listView_ContactsOfUsers.Items.Add(textBox_Surname.Text + ", " + textBox_FirstName.Text);
 
             read.Close();
         }

@@ -69,6 +69,8 @@
             this.columnHeader_Names = new System.Windows.Forms.ColumnHeader();
             this.columnHeader_Date = new System.Windows.Forms.ColumnHeader();
             this.listView_ContactsOfUsers = new System.Windows.Forms.ListView();
+            this.label_DateofFilling = new System.Windows.Forms.Label();
+            this.dateTimePicker_DateofFilling = new System.Windows.Forms.DateTimePicker();
             this.groupBox_PersonalInformation.SuspendLayout();
             this.groupBoxOtherPersontoContact.SuspendLayout();
             this.SuspendLayout();
@@ -507,12 +509,33 @@
             this.listView_ContactsOfUsers.UseCompatibleStateImageBehavior = false;
             this.listView_ContactsOfUsers.View = System.Windows.Forms.View.Details;
             // 
+            // label_DateofFilling
+            // 
+            this.label_DateofFilling.AutoSize = true;
+            this.label_DateofFilling.BackColor = System.Drawing.Color.Transparent;
+            this.label_DateofFilling.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_DateofFilling.ForeColor = System.Drawing.Color.White;
+            this.label_DateofFilling.Location = new System.Drawing.Point(677, 37);
+            this.label_DateofFilling.Name = "label_DateofFilling";
+            this.label_DateofFilling.Size = new System.Drawing.Size(128, 14);
+            this.label_DateofFilling.TabIndex = 19;
+            this.label_DateofFilling.Text = "Date of Filling :";
+            // 
+            // dateTimePicker_DateofFilling
+            // 
+            this.dateTimePicker_DateofFilling.Location = new System.Drawing.Point(640, 60);
+            this.dateTimePicker_DateofFilling.Name = "dateTimePicker_DateofFilling";
+            this.dateTimePicker_DateofFilling.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker_DateofFilling.TabIndex = 22;
+            // 
             // Form_ContactTracingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.ClientSize = new System.Drawing.Size(860, 676);
+            this.Controls.Add(this.dateTimePicker_DateofFilling);
+            this.Controls.Add(this.label_DateofFilling);
             this.Controls.Add(this.listView_ContactsOfUsers);
             this.Controls.Add(this.label_ContactsofUsers);
             this.Controls.Add(this.buttonCancel);
@@ -574,5 +597,7 @@
         private ColumnHeader columnHeader_Names;
         private ColumnHeader columnHeader_Date;
         private ListView listView_ContactsOfUsers;
+        private Label label_DateofFilling;
+        private DateTimePicker dateTimePicker_DateofFilling;
     }
 }
