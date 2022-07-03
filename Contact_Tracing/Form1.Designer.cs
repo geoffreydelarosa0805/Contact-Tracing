@@ -522,6 +522,7 @@
             this.buttonSeeker.TabIndex = 30;
             this.buttonSeeker.Text = "Seek";
             this.buttonSeeker.UseVisualStyleBackColor = false;
+            this.buttonSeeker.Click += new System.EventHandler(this.buttonSeeker_Click);
             // 
             // Form_ContactTracingForm
             // 

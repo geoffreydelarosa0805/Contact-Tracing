@@ -42,6 +42,23 @@ namespace Contact_Tracing
         {
             Application.Exit();
         }
+
+        private void buttonSeeker_Click(object sender, EventArgs e)
+        {
+            var Datafiles = Directory.GetFiles(@"C:\Users\HP\Documents\Outputs\Contact Tracing File\");
+            string date = dateTimePickerSeeker.Text;
+            
+            foreach (string data in Datafiles)
+            {
+                string dateTimePickerSeeker = File.ReadAllText(data);
+                if (dateTimePickerSeeker.Contains(date))
+                {
+                    date = dateTimePickerSeeker;
+                    MessageBox.Show(dateTimePickerSeeker.ToString());
+                }
+            }
+            
+        }
     }
 
 }
