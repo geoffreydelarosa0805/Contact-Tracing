@@ -65,10 +65,6 @@
             this.label_Relationship = new System.Windows.Forms.Label();
             this.textBox_Occupation = new System.Windows.Forms.TextBox();
             this.buttonCancel = new System.Windows.Forms.Button();
-            this.label_ContactsofUsers = new System.Windows.Forms.Label();
-            this.columnHeader_Names = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader_Date = new System.Windows.Forms.ColumnHeader();
-            this.listView_ContactsOfUsers = new System.Windows.Forms.ListView();
             this.label_DateofFilling = new System.Windows.Forms.Label();
             this.dateTimePicker_DateofFilling = new System.Windows.Forms.DateTimePicker();
             this.groupBox_PersonalInformation.SuspendLayout();
@@ -80,7 +76,7 @@
             this.buttonSubmit.BackColor = System.Drawing.Color.Transparent;
             this.buttonSubmit.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.buttonSubmit.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonSubmit.Location = new System.Drawing.Point(771, 641);
+            this.buttonSubmit.Location = new System.Drawing.Point(762, 485);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(75, 23);
             this.buttonSubmit.TabIndex = 0;
@@ -466,48 +462,13 @@
             this.buttonCancel.BackColor = System.Drawing.Color.Transparent;
             this.buttonCancel.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.buttonCancel.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonCancel.Location = new System.Drawing.Point(678, 641);
+            this.buttonCancel.Location = new System.Drawing.Point(669, 485);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 20;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
-            // 
-            // label_ContactsofUsers
-            // 
-            this.label_ContactsofUsers.AutoSize = true;
-            this.label_ContactsofUsers.BackColor = System.Drawing.Color.Transparent;
-            this.label_ContactsofUsers.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label_ContactsofUsers.ForeColor = System.Drawing.Color.White;
-            this.label_ContactsofUsers.Location = new System.Drawing.Point(25, 484);
-            this.label_ContactsofUsers.Name = "label_ContactsofUsers";
-            this.label_ContactsofUsers.Size = new System.Drawing.Size(157, 14);
-            this.label_ContactsofUsers.TabIndex = 19;
-            this.label_ContactsofUsers.Text = "Contacts of Users :";
-            // 
-            // columnHeader_Names
-            // 
-            this.columnHeader_Names.Text = "Name";
-            this.columnHeader_Names.Width = 300;
-            // 
-            // columnHeader_Date
-            // 
-            this.columnHeader_Date.Text = "Date";
-            this.columnHeader_Date.Width = 150;
-            // 
-            // listView_ContactsOfUsers
-            // 
-            this.listView_ContactsOfUsers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader_Names,
-            this.columnHeader_Date});
-            this.listView_ContactsOfUsers.GridLines = true;
-            this.listView_ContactsOfUsers.Location = new System.Drawing.Point(29, 510);
-            this.listView_ContactsOfUsers.Name = "listView_ContactsOfUsers";
-            this.listView_ContactsOfUsers.Size = new System.Drawing.Size(458, 154);
-            this.listView_ContactsOfUsers.TabIndex = 21;
-            this.listView_ContactsOfUsers.UseCompatibleStateImageBehavior = false;
-            this.listView_ContactsOfUsers.View = System.Windows.Forms.View.Details;
             // 
             // label_DateofFilling
             // 
@@ -533,11 +494,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
-            this.ClientSize = new System.Drawing.Size(860, 676);
+            this.ClientSize = new System.Drawing.Size(860, 630);
             this.Controls.Add(this.dateTimePicker_DateofFilling);
             this.Controls.Add(this.label_DateofFilling);
-            this.Controls.Add(this.listView_ContactsOfUsers);
-            this.Controls.Add(this.label_ContactsofUsers);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.groupBoxOtherPersontoContact);
             this.Controls.Add(this.labelContactTracingForm);
@@ -593,10 +552,6 @@
         private Label label_Relationship;
         private TextBox textBox_Occupation;
         private Button buttonCancel;
-        private Label label_ContactsofUsers;
-        private ColumnHeader columnHeader_Names;
-        private ColumnHeader columnHeader_Date;
-        private ListView listView_ContactsOfUsers;
         private Label label_DateofFilling;
         private DateTimePicker dateTimePicker_DateofFilling;
     }
