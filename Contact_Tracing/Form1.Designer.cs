@@ -67,6 +67,9 @@
             this.buttonCancel = new System.Windows.Forms.Button();
             this.label_DateofFilling = new System.Windows.Forms.Label();
             this.dateTimePicker_DateofFilling = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerSeeker = new System.Windows.Forms.DateTimePicker();
+            this.label_ContactsofUsers = new System.Windows.Forms.Label();
+            this.buttonSeeker = new System.Windows.Forms.Button();
             this.groupBox_PersonalInformation.SuspendLayout();
             this.groupBoxOtherPersontoContact.SuspendLayout();
             this.SuspendLayout();
@@ -489,12 +492,46 @@
             this.dateTimePicker_DateofFilling.Size = new System.Drawing.Size(200, 23);
             this.dateTimePicker_DateofFilling.TabIndex = 22;
             // 
+            // dateTimePickerSeeker
+            // 
+            this.dateTimePickerSeeker.Location = new System.Drawing.Point(25, 591);
+            this.dateTimePickerSeeker.Name = "dateTimePickerSeeker";
+            this.dateTimePickerSeeker.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePickerSeeker.TabIndex = 29;
+            // 
+            // label_ContactsofUsers
+            // 
+            this.label_ContactsofUsers.AutoSize = true;
+            this.label_ContactsofUsers.BackColor = System.Drawing.Color.Transparent;
+            this.label_ContactsofUsers.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_ContactsofUsers.ForeColor = System.Drawing.Color.White;
+            this.label_ContactsofUsers.Location = new System.Drawing.Point(25, 535);
+            this.label_ContactsofUsers.Name = "label_ContactsofUsers";
+            this.label_ContactsofUsers.Size = new System.Drawing.Size(157, 14);
+            this.label_ContactsofUsers.TabIndex = 28;
+            this.label_ContactsofUsers.Text = "Contacts of Users :";
+            // 
+            // buttonSeeker
+            // 
+            this.buttonSeeker.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSeeker.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
+            this.buttonSeeker.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonSeeker.Location = new System.Drawing.Point(248, 591);
+            this.buttonSeeker.Name = "buttonSeeker";
+            this.buttonSeeker.Size = new System.Drawing.Size(75, 23);
+            this.buttonSeeker.TabIndex = 30;
+            this.buttonSeeker.Text = "Seek";
+            this.buttonSeeker.UseVisualStyleBackColor = false;
+            // 
             // Form_ContactTracingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.ClientSize = new System.Drawing.Size(860, 630);
+            this.Controls.Add(this.buttonSeeker);
+            this.Controls.Add(this.dateTimePickerSeeker);
+            this.Controls.Add(this.label_ContactsofUsers);
             this.Controls.Add(this.dateTimePicker_DateofFilling);
             this.Controls.Add(this.label_DateofFilling);
             this.Controls.Add(this.buttonCancel);
@@ -554,5 +591,8 @@
         private Button buttonCancel;
         private Label label_DateofFilling;
         private DateTimePicker dateTimePicker_DateofFilling;
+        private DateTimePicker dateTimePickerSeeker;
+        private Label label_ContactsofUsers;
+        private Button buttonSeeker;
     }
 }
