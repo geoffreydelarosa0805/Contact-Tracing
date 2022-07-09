@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using ZXing;
 
 namespace Contact_Tracing
 {
@@ -39,7 +40,7 @@ namespace Contact_Tracing
 
         private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            throw new NotImplementedException();
+            picturBoxCamera.Image = (Bitmap)eventArgs.Frame.Clone();
         }
 
         private void FormQRCode_FormClosing(object sender, FormClosingEventArgs e)
