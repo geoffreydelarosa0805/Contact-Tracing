@@ -78,6 +78,10 @@ namespace Contact_Tracing
             string initialDIR = @"C:\Users\HP\Documents\Outputs\Contact Tracing File\QR Codes";
             var dialog = new SaveFileDialog();
             dialog.InitialDirectory = initialDIR;
+            if(dialog.ShowDialog() == DialogResult.OK)
+            {
+                picQRCode.Image.Save(dialog.FileName);
+            }
         }
     }
 

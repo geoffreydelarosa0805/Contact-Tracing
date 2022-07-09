@@ -577,11 +577,12 @@
             this.labelGenerate.BackColor = System.Drawing.Color.Transparent;
             this.labelGenerate.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelGenerate.ForeColor = System.Drawing.Color.Black;
-            this.labelGenerate.Location = new System.Drawing.Point(10, 56);
+            this.labelGenerate.Location = new System.Drawing.Point(29, 21);
             this.labelGenerate.Name = "labelGenerate";
-            this.labelGenerate.Size = new System.Drawing.Size(131, 45);
+            this.labelGenerate.Size = new System.Drawing.Size(103, 105);
             this.labelGenerate.TabIndex = 36;
-            this.labelGenerate.Text = "Click the Save\r\nbutton to\r\nsave your QR Code.";
+            this.labelGenerate.Text = "To save your\r\nQR Code,\r\nclick the Save\r\nbutton, then\r\nsave the file\r\nto PNG type\r" +
+    "\nand click Save.";
             this.labelGenerate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // picQRCode
@@ -598,7 +599,7 @@
             this.buttonSave.BackColor = System.Drawing.Color.Transparent;
             this.buttonSave.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.buttonSave.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonSave.Location = new System.Drawing.Point(43, 122);
+            this.buttonSave.Location = new System.Drawing.Point(43, 135);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 38;
@@ -612,7 +613,7 @@
             this.groupBoxQRCode.Controls.Add(this.picQRCode);
             this.groupBoxQRCode.Controls.Add(this.buttonSave);
             this.groupBoxQRCode.Controls.Add(this.labelGenerate);
-            this.groupBoxQRCode.Location = new System.Drawing.Point(529, 402);
+            this.groupBoxQRCode.Location = new System.Drawing.Point(527, 396);
             this.groupBoxQRCode.Name = "groupBoxQRCode";
             this.groupBoxQRCode.Size = new System.Drawing.Size(308, 177);
             this.groupBoxQRCode.TabIndex = 39;
