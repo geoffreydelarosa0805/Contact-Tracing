@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5WEmdkg7Fe5XKJPhsIQGwJpRHC1Oa//nW9c+RmI+NLeZ9Nfl+YCKysfVCavUj3al98Ws82mhbnKlIqIgqWCEHg==",
+  "dgSpecHash": "AFLY8Cw3c62Pzs4WN+f5rlLy9RYum1EUjuqjJl4zsMF6u//ceQMK//SGo9eG7uCReXh+e35p5gZzjE4lXZY44A==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\Documents\\Visual Studio 2022\\Contact_Tracing\\Contact_Tracing\\Contact_Tracing.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\qrcoder\\1.3.3\\qrcoder.1.3.3.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\system.drawing.common\\4.5.0-preview1-25914-04\\system.drawing.common.4.5.0-preview1-25914-04.nupkg.sha512"
+  ],
   "logs": []
 }

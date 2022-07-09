@@ -1,3 +1,5 @@
+using QRCoder;
+
 namespace Contact_Tracing
 {
     public partial class Form_ContactTracingForm : Form
@@ -37,6 +39,7 @@ namespace Contact_Tracing
             file.WriteLine("");
 
             file.Close();
+            
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
@@ -65,6 +68,13 @@ namespace Contact_Tracing
         {
             FormQRCode form = new FormQRCode();
             form.Show();
+        }
+
+        private void buttonQrCode_Click(object sender, EventArgs e)
+        {
+            QRCodeGenerator qr = new QRCodeGenerator();
+            QRCodeData data = qr.CreateQrCode(buttonSubmit.Text, QRCodeGenerator.ECCLevel.Q);
+            QRCode code = new QRCode(data);
         }
     }
 

@@ -70,9 +70,11 @@
             this.dateTimePickerSeeker = new System.Windows.Forms.DateTimePicker();
             this.label_ContactsofUsers = new System.Windows.Forms.Label();
             this.buttonSeeker = new System.Windows.Forms.Button();
-            this.labelScan = new System.Windows.Forms.Label();
+            this.labelScanner = new System.Windows.Forms.Label();
             this.labelContacts = new System.Windows.Forms.Label();
             this.buttonScanner = new System.Windows.Forms.Button();
+            this.buttonQrCode = new System.Windows.Forms.Button();
+            this.labelGenerate = new System.Windows.Forms.Label();
             this.groupBox_PersonalInformation.SuspendLayout();
             this.groupBoxOtherPersontoContact.SuspendLayout();
             this.SuspendLayout();
@@ -527,17 +529,17 @@
             this.buttonSeeker.UseVisualStyleBackColor = false;
             this.buttonSeeker.Click += new System.EventHandler(this.buttonSeeker_Click);
             // 
-            // labelScan
+            // labelScanner
             // 
-            this.labelScan.AutoSize = true;
-            this.labelScan.BackColor = System.Drawing.Color.Transparent;
-            this.labelScan.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelScan.ForeColor = System.Drawing.Color.White;
-            this.labelScan.Location = new System.Drawing.Point(515, 599);
-            this.labelScan.Name = "labelScan";
-            this.labelScan.Size = new System.Drawing.Size(247, 15);
-            this.labelScan.TabIndex = 32;
-            this.labelScan.Text = "Click the button to Scan your QR Code";
+            this.labelScanner.AutoSize = true;
+            this.labelScanner.BackColor = System.Drawing.Color.Transparent;
+            this.labelScanner.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelScanner.ForeColor = System.Drawing.Color.White;
+            this.labelScanner.Location = new System.Drawing.Point(515, 599);
+            this.labelScanner.Name = "labelScanner";
+            this.labelScanner.Size = new System.Drawing.Size(247, 15);
+            this.labelScanner.TabIndex = 32;
+            this.labelScanner.Text = "Click the button to Scan your QR Code";
             // 
             // labelContacts
             // 
@@ -565,15 +567,42 @@
             this.buttonScanner.UseVisualStyleBackColor = false;
             this.buttonScanner.Click += new System.EventHandler(this.buttonScanner_Click);
             // 
+            // buttonQrCode
+            // 
+            this.buttonQrCode.BackColor = System.Drawing.Color.Transparent;
+            this.buttonQrCode.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
+            this.buttonQrCode.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonQrCode.Location = new System.Drawing.Point(762, 549);
+            this.buttonQrCode.Name = "buttonQrCode";
+            this.buttonQrCode.Size = new System.Drawing.Size(75, 23);
+            this.buttonQrCode.TabIndex = 35;
+            this.buttonQrCode.Text = "Generate";
+            this.buttonQrCode.UseVisualStyleBackColor = false;
+            this.buttonQrCode.Click += new System.EventHandler(this.buttonQrCode_Click);
+            // 
+            // labelGenerate
+            // 
+            this.labelGenerate.AutoSize = true;
+            this.labelGenerate.BackColor = System.Drawing.Color.Transparent;
+            this.labelGenerate.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelGenerate.ForeColor = System.Drawing.Color.White;
+            this.labelGenerate.Location = new System.Drawing.Point(483, 553);
+            this.labelGenerate.Name = "labelGenerate";
+            this.labelGenerate.Size = new System.Drawing.Size(276, 15);
+            this.labelGenerate.TabIndex = 36;
+            this.labelGenerate.Text = "Click the button to Generate your QR Code";
+            // 
             // Form_ContactTracingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.ClientSize = new System.Drawing.Size(860, 630);
+            this.Controls.Add(this.labelGenerate);
+            this.Controls.Add(this.buttonQrCode);
             this.Controls.Add(this.buttonScanner);
             this.Controls.Add(this.labelContacts);
-            this.Controls.Add(this.labelScan);
+            this.Controls.Add(this.labelScanner);
             this.Controls.Add(this.buttonSeeker);
             this.Controls.Add(this.dateTimePickerSeeker);
             this.Controls.Add(this.label_ContactsofUsers);
@@ -639,8 +668,10 @@
         private DateTimePicker dateTimePickerSeeker;
         private Label label_ContactsofUsers;
         private Button buttonSeeker;
-        private Label labelScan;
+        private Label labelScanner;
         private Label labelContacts;
         private Button buttonScanner;
+        private Button buttonQrCode;
+        private Label labelGenerate;
     }
 }
