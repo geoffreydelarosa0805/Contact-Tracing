@@ -54,6 +54,7 @@
             this.buttonStart.TabIndex = 1;
             this.buttonStart.Text = "Start";
             this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
             // comboBoxDevice
             // 
@@ -103,6 +104,7 @@
             this.Controls.Add(this.labelCam);
             this.Name = "FormQRCode";
             this.Text = "QR Code Scanner";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormQRCode_FormClosing);
             this.Load += new System.EventHandler(this.FormQRCode_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picturBoxCamera)).EndInit();
             this.ResumeLayout(false);
