@@ -73,11 +73,8 @@ namespace Contact_Tracing
             FormQRCode form = new FormQRCode();
             form.Show();
         }
-
-        private void buttonQrCode_Click(object sender, EventArgs e)
+        private void buttonSave_Click(object sender, EventArgs e)
         {
-            
-
             string initialDIR = @"C:\Users\HP\Documents\Outputs\Contact Tracing File\QR Codes";
             var dialog = new SaveFileDialog();
             dialog.InitialDirectory = initialDIR;
