@@ -16,5 +16,10 @@ namespace Contact_Tracing
         {
             InitializeComponent();
         }
+
+        private void FormQRCode_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

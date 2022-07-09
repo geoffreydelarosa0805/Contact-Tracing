@@ -577,18 +577,18 @@
             this.labelGenerate.BackColor = System.Drawing.Color.Transparent;
             this.labelGenerate.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelGenerate.ForeColor = System.Drawing.Color.Black;
-            this.labelGenerate.Location = new System.Drawing.Point(29, 21);
+            this.labelGenerate.Location = new System.Drawing.Point(7, 24);
             this.labelGenerate.Name = "labelGenerate";
-            this.labelGenerate.Size = new System.Drawing.Size(103, 105);
+            this.labelGenerate.Size = new System.Drawing.Size(136, 105);
             this.labelGenerate.TabIndex = 36;
-            this.labelGenerate.Text = "To save your\r\nQR Code,\r\nclick the Save\r\nbutton, then\r\nsave the file\r\nto PNG type\r" +
-    "\nand click Save.";
+            this.labelGenerate.Text = "To save your\r\nQR Code,\r\nclick the Save\r\nbutton, then\r\nsave the file\r\nto PNG or JP" +
+    "EG type\r\nand click Save.";
             this.labelGenerate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // picQRCode
             // 
             this.picQRCode.BackColor = System.Drawing.Color.White;
-            this.picQRCode.Location = new System.Drawing.Point(144, 22);
+            this.picQRCode.Location = new System.Drawing.Point(146, 22);
             this.picQRCode.Name = "picQRCode";
             this.picQRCode.Size = new System.Drawing.Size(145, 145);
             this.picQRCode.TabIndex = 37;
@@ -599,7 +599,7 @@
             this.buttonSave.BackColor = System.Drawing.Color.Transparent;
             this.buttonSave.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.buttonSave.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonSave.Location = new System.Drawing.Point(43, 135);
+            this.buttonSave.Location = new System.Drawing.Point(37, 135);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 38;
