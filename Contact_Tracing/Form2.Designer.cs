@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "FormQRCode";
-            this.Text = "QR Code Generator";
+            this.Text = "QR Code Scanner";
             this.ResumeLayout(false);
 
         }

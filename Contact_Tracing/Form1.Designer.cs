@@ -70,6 +70,9 @@
             this.dateTimePickerSeeker = new System.Windows.Forms.DateTimePicker();
             this.label_ContactsofUsers = new System.Windows.Forms.Label();
             this.buttonSeeker = new System.Windows.Forms.Button();
+            this.labelScan = new System.Windows.Forms.Label();
+            this.labelContacts = new System.Windows.Forms.Label();
+            this.buttonScanner = new System.Windows.Forms.Button();
             this.groupBox_PersonalInformation.SuspendLayout();
             this.groupBoxOtherPersontoContact.SuspendLayout();
             this.SuspendLayout();
@@ -524,12 +527,53 @@
             this.buttonSeeker.UseVisualStyleBackColor = false;
             this.buttonSeeker.Click += new System.EventHandler(this.buttonSeeker_Click);
             // 
+            // labelScan
+            // 
+            this.labelScan.AutoSize = true;
+            this.labelScan.BackColor = System.Drawing.Color.Transparent;
+            this.labelScan.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelScan.ForeColor = System.Drawing.Color.White;
+            this.labelScan.Location = new System.Drawing.Point(515, 599);
+            this.labelScan.Name = "labelScan";
+            this.labelScan.Size = new System.Drawing.Size(247, 15);
+            this.labelScan.TabIndex = 32;
+            this.labelScan.Text = "Click the button to Scan your QR Code";
+            // 
+            // labelContacts
+            // 
+            this.labelContacts.AutoSize = true;
+            this.labelContacts.BackColor = System.Drawing.Color.Transparent;
+            this.labelContacts.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelContacts.ForeColor = System.Drawing.Color.White;
+            this.labelContacts.Location = new System.Drawing.Point(28, 552);
+            this.labelContacts.Name = "labelContacts";
+            this.labelContacts.Size = new System.Drawing.Size(306, 32);
+            this.labelContacts.TabIndex = 33;
+            this.labelContacts.Text = "          To know the people who filled out on a specific \r\ndate, insert the date" +
+    " that you want to know.";
+            // 
+            // buttonScanner
+            // 
+            this.buttonScanner.BackColor = System.Drawing.Color.Transparent;
+            this.buttonScanner.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
+            this.buttonScanner.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonScanner.Location = new System.Drawing.Point(762, 595);
+            this.buttonScanner.Name = "buttonScanner";
+            this.buttonScanner.Size = new System.Drawing.Size(75, 23);
+            this.buttonScanner.TabIndex = 34;
+            this.buttonScanner.Text = "Scanner";
+            this.buttonScanner.UseVisualStyleBackColor = false;
+            this.buttonScanner.Click += new System.EventHandler(this.buttonScanner_Click);
+            // 
             // Form_ContactTracingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.ClientSize = new System.Drawing.Size(860, 630);
+            this.Controls.Add(this.buttonScanner);
+            this.Controls.Add(this.labelContacts);
+            this.Controls.Add(this.labelScan);
             this.Controls.Add(this.buttonSeeker);
             this.Controls.Add(this.dateTimePickerSeeker);
             this.Controls.Add(this.label_ContactsofUsers);
@@ -595,5 +639,8 @@
         private DateTimePicker dateTimePickerSeeker;
         private Label label_ContactsofUsers;
         private Button buttonSeeker;
+        private Label labelScan;
+        private Label labelContacts;
+        private Button buttonScanner;
     }
 }

@@ -2,10 +2,11 @@ namespace Contact_Tracing
 {
     public partial class Form_ContactTracingForm : Form
     {
-
+        public static Form_ContactTracingForm instance;
         public Form_ContactTracingForm()
         {
             InitializeComponent();
+            instance = this;
         }
 
         private void buttonSubmit_Click(object sender, EventArgs e)
@@ -58,6 +59,12 @@ namespace Contact_Tracing
                 }
             }
             
+        }
+
+        private void buttonScanner_Click(object sender, EventArgs e)
+        {
+            FormQRCode form = new FormQRCode();
+            form.Show();
         }
     }
 
