@@ -17,3 +17,6 @@ C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Deb
 C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\Contact_Tracing.Form_ContactTracingForm.resources
 C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\Contact_Tracing.Properties.Resources.resources
 C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\Contact_Tracing.FormQRCode.resources
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\bin\Debug\net6.0-windows\QRCoder.dll
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\bin\Debug\net6.0-windows\UnityEngine.dll
+C:\Users\HP\Documents\Visual Studio 2022\Contact_Tracing\Contact_Tracing\obj\Debug\net6.0-windows\Contact_Tracing.csproj.CopyComplete

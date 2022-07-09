@@ -13,7 +13,7 @@ namespace Contact_Tracing
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\HP\Documents\Outputs\Contact Tracing File\" + dateTimePicker_DateofFilling.Text + ".txt", true);
+            StreamWriter file = new StreamWriter(@"C:\Users\HP\Documents\Outputs\Contact Tracing File\Contacts\" + dateTimePicker_DateofFilling.Text + ".txt", true);
 
             file.WriteLine("Date of Filling : " + dateTimePicker_DateofFilling.Text);
             file.WriteLine("First Name : " + textBox_FirstName.Text);
@@ -39,7 +39,11 @@ namespace Contact_Tracing
             file.WriteLine("");
 
             file.Close();
-            
+
+            QRCodeGenerator qr = new QRCodeGenerator();
+            QRCodeData data = qr.CreateQrCode(buttonSubmit.Text, QRCodeGenerator.ECCLevel.Q);
+            QRCode code = new QRCode(data);
+            picQRCode.Image = code.GetGraphic(5);
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
@@ -49,7 +53,7 @@ namespace Contact_Tracing
 
         private void buttonSeeker_Click(object sender, EventArgs e)
         {
-            var Datafiles = Directory.GetFiles(@"C:\Users\HP\Documents\Outputs\Contact Tracing File\");
+            var Datafiles = Directory.GetFiles(@"C:\Users\HP\Documents\Outputs\Contact Tracing File\Contacts\");
             string date = dateTimePickerSeeker.Text;
             
             foreach (string data in Datafiles)
@@ -72,9 +76,11 @@ namespace Contact_Tracing
 
         private void buttonQrCode_Click(object sender, EventArgs e)
         {
-            QRCodeGenerator qr = new QRCodeGenerator();
-            QRCodeData data = qr.CreateQrCode(buttonSubmit.Text, QRCodeGenerator.ECCLevel.Q);
-            QRCode code = new QRCode(data);
+            
+
+            string initialDIR = @"C:\Users\HP\Documents\Outputs\Contact Tracing File\QR Codes";
+            var dialog = new SaveFileDialog();
+            dialog.InitialDirectory = initialDIR;
         }
     }
 

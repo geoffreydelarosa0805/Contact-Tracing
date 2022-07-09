@@ -75,8 +75,10 @@
             this.buttonScanner = new System.Windows.Forms.Button();
             this.buttonQrCode = new System.Windows.Forms.Button();
             this.labelGenerate = new System.Windows.Forms.Label();
+            this.picQRCode = new System.Windows.Forms.PictureBox();
             this.groupBox_PersonalInformation.SuspendLayout();
             this.groupBoxOtherPersontoContact.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picQRCode)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonSubmit
@@ -84,7 +86,7 @@
             this.buttonSubmit.BackColor = System.Drawing.Color.Transparent;
             this.buttonSubmit.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.buttonSubmit.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonSubmit.Location = new System.Drawing.Point(762, 485);
+            this.buttonSubmit.Location = new System.Drawing.Point(762, 399);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(75, 23);
             this.buttonSubmit.TabIndex = 0;
@@ -327,7 +329,7 @@
             this.groupBoxOtherPersontoContact.ForeColor = System.Drawing.Color.White;
             this.groupBoxOtherPersontoContact.Location = new System.Drawing.Point(402, 101);
             this.groupBoxOtherPersontoContact.Name = "groupBoxOtherPersontoContact";
-            this.groupBoxOtherPersontoContact.Size = new System.Drawing.Size(417, 366);
+            this.groupBoxOtherPersontoContact.Size = new System.Drawing.Size(417, 280);
             this.groupBoxOtherPersontoContact.TabIndex = 19;
             this.groupBoxOtherPersontoContact.TabStop = false;
             this.groupBoxOtherPersontoContact.Text = "Other Person to Contact";
@@ -470,7 +472,7 @@
             this.buttonCancel.BackColor = System.Drawing.Color.Transparent;
             this.buttonCancel.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.buttonCancel.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonCancel.Location = new System.Drawing.Point(669, 485);
+            this.buttonCancel.Location = new System.Drawing.Point(669, 399);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 20;
@@ -572,7 +574,7 @@
             this.buttonQrCode.BackColor = System.Drawing.Color.Transparent;
             this.buttonQrCode.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.buttonQrCode.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonQrCode.Location = new System.Drawing.Point(762, 549);
+            this.buttonQrCode.Location = new System.Drawing.Point(760, 549);
             this.buttonQrCode.Name = "buttonQrCode";
             this.buttonQrCode.Size = new System.Drawing.Size(75, 23);
             this.buttonQrCode.TabIndex = 35;
@@ -586,11 +588,19 @@
             this.labelGenerate.BackColor = System.Drawing.Color.Transparent;
             this.labelGenerate.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelGenerate.ForeColor = System.Drawing.Color.White;
-            this.labelGenerate.Location = new System.Drawing.Point(483, 553);
+            this.labelGenerate.Location = new System.Drawing.Point(481, 553);
             this.labelGenerate.Name = "labelGenerate";
             this.labelGenerate.Size = new System.Drawing.Size(276, 15);
             this.labelGenerate.TabIndex = 36;
             this.labelGenerate.Text = "Click the button to Generate your QR Code";
+            // 
+            // picQRCode
+            // 
+            this.picQRCode.Location = new System.Drawing.Point(515, 412);
+            this.picQRCode.Name = "picQRCode";
+            this.picQRCode.Size = new System.Drawing.Size(141, 132);
+            this.picQRCode.TabIndex = 37;
+            this.picQRCode.TabStop = false;
             // 
             // Form_ContactTracingForm
             // 
@@ -598,6 +608,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing.Properties.Resources.contact_tracing_twitter;
             this.ClientSize = new System.Drawing.Size(860, 630);
+            this.Controls.Add(this.picQRCode);
             this.Controls.Add(this.labelGenerate);
             this.Controls.Add(this.buttonQrCode);
             this.Controls.Add(this.buttonScanner);
@@ -615,10 +626,12 @@
             this.Controls.Add(this.buttonSubmit);
             this.MaximizeBox = false;
             this.Name = "Form_ContactTracingForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.groupBox_PersonalInformation.ResumeLayout(false);
             this.groupBox_PersonalInformation.PerformLayout();
             this.groupBoxOtherPersontoContact.ResumeLayout(false);
             this.groupBoxOtherPersontoContact.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picQRCode)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -673,5 +686,6 @@
         private Button buttonScanner;
         private Button buttonQrCode;
         private Label labelGenerate;
+        private PictureBox picQRCode;
     }
 }
